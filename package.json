@@ -1,0 +1,39 @@
+{
+  "name": "node-face-login",
+  "version": "1.0.0",
+  "description": "2fa auth with password and face",
+  "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "keywords": [],
+  "author": "Ande Yashwanth",
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "bcrypt": "^5.0.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "joi-password-complexity": "^4.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.21",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "uuid": "^8.3.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^7.5.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "mocha": "^8.1.0",
+    "nodemon": "^2.0.4"
+  }
+}

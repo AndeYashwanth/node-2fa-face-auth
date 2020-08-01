@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="/css/login.css">
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <h5 class="card-title text-center">Login</h5>
+            <%- include ('./partials/dismiss_msg') %>
+            <form action="/auth/login" method="POST" class="form-signin">
+              <div class="form-label-group">
+                <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address"
+                  value="<%= typeof email != 'undefined' ? email : '' %>" required autofocus>
+                <label for="inputEmail">Email address</label>
+              </div>
+
+              <div class="form-label-group">
+                <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password"
+                  required>
+                <label for="inputPassword">Password</label>
+              </div>
+
+              <div class="custom-control custom-checkbox mb-3">
+                <input type="checkbox" name="remember" class="custom-control-input" id="remember" value='true'>
+                <label class="custom-control-label" for="remember">Remember Me</label>
+              </div>
+              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
+              <hr class="my-4">
+              <a href="#" class="btn btn-lg btn-google btn-block text-uppercase"><i class="fa fa-google mr-2"></i> Sign
+                in with Google</a>
+              <a href="#" class="btn btn-lg btn-facebook btn-block text-uppercase"><i class="fa fa-facebook-f mr-2"></i>
+                Sign in with Facebook</a>
+            </form>
+            <div class="text-center">Don't have an account? <a href="/auth/register">Register here</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
